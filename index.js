@@ -3,7 +3,10 @@ const app = express();
 const port = 3000;
 
 const Sequelize = require ('sequelize');
-const 
+
+const sequelize = new Sequelize
+
+
 app.get('/', (req,res)=> res.send('Notes App'));
 
 app.listen(port, () => console.log(`notes-app listening on port ${3000}!`));
