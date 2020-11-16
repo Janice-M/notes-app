@@ -10,7 +10,7 @@ const sequelize = new Sequelize({
     storage: './database.sqlite'
 
 })
-
+sequelize.authenticate().then
 
 app.get('/', (req,res)=> res.send('Notes App'));
 
