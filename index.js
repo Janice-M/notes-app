@@ -4,4 +4,4 @@ const port = 3000;
 
 app.get('/', (req,res)=> res.send('Notes App'));
 
-app
+app.listen(port, () => console.log(`notes-app listening on port ${3000}!`));
