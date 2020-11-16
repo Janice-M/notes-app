@@ -2,6 +2,7 @@ const express = require ('express');
 const app = express();
 const port = 3000;
 
+const Sequelize = require ('sequelize');
 const 
 app.get('/', (req,res)=> res.send('Notes App'));
 
