@@ -4,7 +4,12 @@ const port = 3000;
 
 const Sequelize = require ('sequelize');
 
-const sequelize = new Sequelize
+const sequelize = new Sequelize({
+
+    dialect: 'sqlite',
+    storage: './database.sqlite'
+
+})
 
 
 app.get('/', (req,res)=> res.send('Notes App'));
