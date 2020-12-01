@@ -42,4 +42,3 @@ sequelize.sync({ force: true })
         console.log(notes);
         });
     });
-  
