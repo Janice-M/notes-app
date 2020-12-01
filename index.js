@@ -20,3 +20,5 @@ sequelize.authenticate().then(() => {
 app.get('/', (req,res)=> res.send('Notes App'));
 
 app.listen(port, () => console.log(`notes-app listening on port ${3000}!`));
+
+const Note = sequelize.define('notes', { note: Sequelize.TEXT, tag: Sequelize.STRING });
