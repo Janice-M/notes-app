@@ -40,6 +40,6 @@ sequelize.sync({ force: true })
         return Note.findAll();
       }).then(function(notes) {
         console.log(notes);
-      });
+        });
     });
   
