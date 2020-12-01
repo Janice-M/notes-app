@@ -38,7 +38,7 @@ sequelize.sync({ force: true })
         { note: 'learn how to use node orm', tag: 'work' }
         ]).then(function() {
         return Note.findAll();
-      }).then(function(notes) {
+        }).then(function(notes) {
         console.log(notes);
         });
     });
