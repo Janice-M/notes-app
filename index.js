@@ -32,7 +32,7 @@ sequelize.sync({ force: true })
     .then(() => {
         console.log(`Database & tables created!`);
   
-      Note.bulkCreate([
+        Note.bulkCreate([
         { note: 'pick up some bread after work', tag: 'shopping' },
         { note: 'remember to write up meeting notes', tag: 'work' },
         { note: 'learn how to use node orm', tag: 'work' }
